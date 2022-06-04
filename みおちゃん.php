@@ -4,11 +4,11 @@ class みおちゃん
 {
 	private int $count = 0;
 
-    /**
-     * @param int $x
-     * @param int $y
-     * @return int|string
-     */
+	/**
+	 * @param int $x
+	 * @param int $y
+	 * @return int|string
+	 */
 	public function plus(int $x, int $y): int|string
 	{
 		// 計算回数
@@ -26,11 +26,11 @@ class みおちゃん
 $みおちゃん = new みおちゃん();
 for($i = 0; $i < 5; $i++){
 	echo $みおちゃん->plus(1, 1);
-    echo PHP_EOL;
+	echo PHP_EOL;
 }
 
 // 毎回インスタンスを生成して5回計算
 for($i = 0; $i < 5; $i++){
 	echo (new みおちゃん())->plus(1, 1);
-    echo PHP_EOL;
+	echo PHP_EOL;
 }
